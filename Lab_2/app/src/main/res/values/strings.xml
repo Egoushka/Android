@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab_2</string>
+    <string name="button_text">Show group`s students</string>
+    <string name="textView_text">Click the button</string>
+    <string-array name="students_groups">
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>304</item>
+    </string-array>
+</resources>
