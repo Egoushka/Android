@@ -38,16 +38,14 @@
             tools:layout_editor_absoluteX="16dp" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="409dp"
-            android:layout_height="308dp"
-            android:text="@string/emptyString"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:text="@string/timer_zero_value"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@+id/button" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

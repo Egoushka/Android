@@ -38,7 +38,16 @@ class StudentsFragment : Fragment() {
             intent.type = "message/rfc822"
             startActivity(Intent.createChooser(intent, "Select email"))
         }
+        view.goBackButton.setOnClickListener{
+            v ->
+                loadFragment(GroupListFragment.newInstance())
+        }
+        view.doubleButton.setOnClickListener{
+                v ->
+            view.textView.textSize = view.textView.textSize * 1.1f;
+        }
         return view
+
 
     }
     private fun loadFragment(fragment: Fragment){

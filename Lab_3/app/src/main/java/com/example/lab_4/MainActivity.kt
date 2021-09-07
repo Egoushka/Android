@@ -12,16 +12,16 @@ import com.example.lab_4.fragments.StudentsFragment.Companion.newInstance
 
 
 class MainActivity : AppCompatActivity() {
+    public var timeInSeconds = 0L
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container1, GroupListFragment.newInstance(""))
+                .replace(R.id.container1, GroupListFragment.newInstance())
                 .commitNow()
         }
 
     }
-
 
 }
